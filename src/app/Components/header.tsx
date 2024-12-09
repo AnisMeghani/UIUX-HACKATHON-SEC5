@@ -34,7 +34,7 @@ export const Header = () => {
 
       {/* search bar display */}
       <div className="flex w-4/12 bg-slate-200 border rounded-3xl px-4 py-2">
-      {/* search icon placement */}
+        {/* search icon placement */}
         <Search className="pb-2" />
         <input
           type="text"
@@ -42,7 +42,7 @@ export const Header = () => {
           className=" bg-slate-200 pl-3 text-sm"
         ></input>
       </div>
-        {/* Shopping trolly icon inserted */}
+      {/* Shopping trolly icon inserted */}
       <ShoppingCart className="ml-6 mr-3 mt-1 text-sm" />
       {/* Contact icon inserted */}
       <CircleUserRound className="mt-1 text-sm" />

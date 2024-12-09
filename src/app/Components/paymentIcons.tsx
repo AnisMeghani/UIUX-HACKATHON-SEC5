@@ -1,4 +1,9 @@
-import { FaPaypal, FaCcVisa, FaCcMastercard, FaGooglePay } from 'react-icons/fa';
+import {
+  FaPaypal,
+  FaCcVisa,
+  FaCcMastercard,
+  FaGooglePay,
+} from "react-icons/fa";
 
 const PaymentIcons = () => (
   <div className="flex space-x-4">

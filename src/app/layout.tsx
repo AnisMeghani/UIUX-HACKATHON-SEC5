@@ -4,7 +4,6 @@ import "./globals.css";
 import UpperHeader, { Header } from "./Components/header";
 import Footer from "./Components/footer";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,12 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}><UpperHeader />
-      <Header />{children}
-      
-      <Footer />
+      <body className={inter.className}>
+        <UpperHeader />
+        <Header />
+        {children}
+
+        <Footer />
       </body>
-      
     </html>
   );
 }
