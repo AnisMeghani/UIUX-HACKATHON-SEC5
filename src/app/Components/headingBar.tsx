@@ -1,56 +1,22 @@
-import React from "react";
-import Image from "next/image";
+import { Weight } from "lucide-react"
+import { Playfair_Display,Cinzel,Bodoni_Moda,Prata,Montserrat } from "next/font/google"
+
+const font_playFair= Playfair_Display({subsets:["latin"]})
+const font_Cinzel= Cinzel({subsets:["latin"]})
+const font_Bodoni_Moda= Bodoni_Moda({subsets:["latin"]})
+const font_Prata= Prata({subsets:["latin"], weight:"400"})
+const font_Montserrat= Montserrat({subsets:["latin"]})
 
 const HeadingBar = () => {
   return (
-    <div className="lg:flex bg-black w-full h-auto text-white items-center sm:gap-5 sm:py-10 ">
-      <div className="flex sm:justify-evenly sm:pb-6 lg:pt-3">
-      <div className="lg:pr-10 lg:pl-32 lg:w-[206] lg:h-[30]">
-        <Image 
-        src="/images/versace-logo-1 1.png"
-        alt="versace-logo"
-        width={166.48}
-        height={33.16}
-         />
-         </div>
-         <div className="lg:px-10 lg:w-[206] lg:h-[30]">
-        <Image 
-        src="/images/zara-logo-1 1.png"
-        alt="zara-logo"
-        width={91}
-        height={38}
-         />
-         </div>
-         <div className="lg:px-10 lg:w-[206] lg:h-[30]">
-        <Image 
-        src="/images/gucci-logo-1 1.png"
-        alt="gucci-logo"
-        width={156}
-        height={36}
-         />
-         </div>
-         </div>
-
-          <div className="flex sm:justify-evenly lg:items-center lg:pb-2">
-         <div className="lg:px-10 lg:w-[206] lg:h-[30]">
-        <Image 
-        src="/images/prada-logo-1 1.png"
-        alt="prada-logo"
-        width={194}
-        height={32}
-         />
-         </div>
-         <div className="lg:px-10 lg:w-[206] lg:h-[30]">
-        <Image 
-        src="/images/calvin-klein-logo-1 1.png"
-        alt="calvin-klein-logo-1 1ppp"
-        width={206.79}
-        height={33.35}
-         />
-         </div>
-         </div>
+    <div className="bg-black w-full h-[122px] flex justify-center space-x-8 md:justify-between items-center px-10 flex-wrap">
+      <h1 className={`${font_playFair.className} text-white text-2xl md:text-4xl` }>VERSACE</h1>
+      <h1 className={`${font_Cinzel.className} text-white text-2xl md:text-4xl`}>ZARA</h1>
+      <h1 className={`${font_Bodoni_Moda.className } text-white text-2xl md:text-4xl`}>GUCCI</h1>
+      <h1 className={`${font_Prata.className} text-white text-2xl md:text-4xl`}>PRADA</h1>
+      <h1 className={`${font_Montserrat.className} text-white text-2xl md:text-4xl`}>CALVIN KLEIN</h1>
     </div>
-  );
-};
+  )
+}
 
-export default HeadingBar;
+export default HeadingBar

@@ -9,15 +9,15 @@ const Gallery = () => {
       </h1>
 
       
-        <div className=" lg:flex lg:justify-center w-full h-auto gap-3 mb-3 mt-3">
-          <div className="w-11/12 mx-auto h-auto lg:w-[407px] lg:h-[289px]">
+        <div className=" lg:flex lg:justify-center w-full h-auto gap-3 mb-3 mt-3 lg:ml-[54px]">
+          <div className=" w-11/12 mx-auto lg:mx-0 h-auto lg:w-[650px] lg:h-[289px]">
             <div className="relative mb-4">
             <Image
               src="/images/gallerypic1dup.png"
               alt="pic1"
               width={590}
               height={189}
-              className="border rounded-3xl"
+              className="border rounded-3xl lg:w-[890px] lg:h-[289px]"
             />
             <div className="absolute inset-0 flex text-black text-2xl font-bold bg-black bg-opacity-0 pl-8 pt-8">
               Casual
@@ -25,14 +25,14 @@ const Gallery = () => {
           </div>
           </div>
 
-          <div className=" w-11/12 h-auto mx-auto">
-          <div className="relative lg:border rounded-3xl overflow-hidden opacity-100 mx-auto">
+          <div className=" w-11/12 h-auto mx-auto ">
+          <div className="relative lg:border rounded-3xl overflow-hidden opacity-100 mx-auto lg:w-[650px] lg:h-[289px] lg:mr-28">
             <Image
               src="/images/gallery-pic-2.png"
               alt="Formal"
               width={590}
               height={289}
-              className=""
+              className="lg:w-[700px] lg:h-[289px]"
             />
             {/* <div className=" transform rotate-0 absolute inset-0 flex text-black text-2xl font-bold bg-black bg-opacity-0 pl-8 pt-8">
             
@@ -42,14 +42,14 @@ const Gallery = () => {
         </div>
 
         <div className="lg:flex lg:justify-center w-full h-auto lg:gap-3 ">
-        <div className=" w-11/12 h-auto mx-auto ">
-        <div className="relative border rounded-3xl overflow-hidden opacity-100 mb-4">
+        <div className="w-11/12 h-auto mx-auto lg:w-[850px] lg:ml-14">
+        <div className="relative border rounded-3xl overflow-hidden opacity-100 mb-4  lg:h-[289px] ">
             <Image
               src="/images/gallery-pic-3.png"
               alt="Party"
               width={684}
               height={289}
-              className=""
+              className="lg:w-[700px] lg:h-[289px]"
             />
             <div className="absolute inset-0 flex text-black text-2xl font-bold bg-black bg-opacity-0 pl-8 pt-8">
               Party
@@ -57,14 +57,14 @@ const Gallery = () => {
           </div>
         </div>
 
-        <div className=" w-11/12 h-auto mx-auto">
-        <div className="relative mb-8">
+        <div className=" w-11/12 h-auto mx-auto lg:w-[700px] lg:h-[289px] lg:mr-[60px]">
+        <div className="relative mb-8 ">
     <Image
       src="/images/gallery-pic-4.png"
       alt="Gym"
       width={590}
       height={289}
-      className="lg:border rounded-xl"
+      className="lg:border rounded-3xl lg:w-full lg:h-[289px]"
     />
 
 </div>

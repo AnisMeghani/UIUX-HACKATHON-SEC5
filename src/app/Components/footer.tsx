@@ -1,185 +1,84 @@
-import React from "react";
-import { Mail } from "lucide-react";
-import { Twitter } from "lucide-react";
-import { Facebook } from "lucide-react";
-import { Instagram } from "lucide-react";
-import { Github } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
+import Offers from "./offer";
+import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa6";
+import { Images } from "lucide-react";
 import Image from "next/image";
-import BorderLine from "./borderLine";
 
-const Footer = () => {
-  return (
-    <div>
-      <div className="bg-[#efedee] w-full h-auto mt-20 flex justify-center">
-        <div className="w-11/12 h-auto">
-          <div className="bg-black text-white rounded-3xl pb-10">
-          
-            <div className="text-5xl font-black pt-3 ml-8">
-              STAY UPTO DATE ABOUT OUR LATEST OFFERS
-            </div>
-
-            <div className="w-full h-[108px] mt-2 mx-auto">
-              <div
-                className="flex items-center bg-white border rounded-[62px] h-11 w-[540px] pt-[12px] pr-[16[x] mx-auto pb-[12px] 
-           mb-4"
-              >
-                <Mail className="text-slate-600 w-auto h-auto pl-5" />
-                <input
-                  type="text"
-                  placeholder="Enter your email address"
-                  className="bg-white placeholder-slate-600 text-sm pl-5"
-                ></input>
-              </div>
-              <div className="flex items-center bg-white border rounded-[62px] h-11 w-[540px] pt-[12px] pr-[16[x] mx-auto pb-[12px] 
-           mb-4">
-              <input
-                type="text"
-                placeholder="Subscribe to Newsletter"
-                className="bg-white placeholder-black font-semibold text-sm text-center w-full"
-              ></input>
-            </div>
-            </div>
-
-            
-
+export default function Footer(){
+    return (
+        <main className="bg-[#F0F0F0] w-full h-full md:h-[450px] relative mt-32  max-w-screen-2xl mx-auto">
+          {/*  */}
+          <div className="flex justify-center">
+          <span className="absolute top-[-80px]">
+          <Offers/>
+          </span>
+          </div>
+        {/* container */}
+        <div  className="flex h-full md:h-[400px] flex-col md:flex-row justify-between items-center p-5 pt-[160px] sm:pt-32 border-b ">
+          {/* top div */}
+          <div className="flex flex-col justify-center items-center w-[200px]"> 
+            <ul>
+                <h2 className="text-2xl sm:text-3xl font-black pb-2 ">SHOP.CO</h2>
+                <p className="text-sm mt-1 pb-4"> We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                   {/* icon */}
+                   <div className="flex items-center space-x-3 mt-1">
+                    <FaInstagram className="text-xl"/>
+                     <FaFacebook className="text-xl"/>
+                       <FaGithub className="text-xl"/>
+                      <FaTwitter className="text-xl"/>
+                   </div>
+            </ul>
+          </div>
+          {/* mid div */}
+          <div className="w-full md:w-[900px] grid grid-cols-2 sm:grid-cols-4 items-center space-y-4">
+              {/* box 1 */}
+                 <ul className="space-y-3 ">
+                   <h2 className="text-sm sm:text-2xl">COMPANY</h2>
+                   <li  className="text-sm">About</li>
+                   <li  className="text-sm">Features</li>
+                   <li  className="text-sm">Work</li>
+                   <li  className="text-sm">Career</li>
+                   </ul>
+                {/* box 2 */}
+                <ul className="space-y-3 pb-4">
+                   <h2 className="text-sm sm:text-2xl">HELP</h2>
+                   <li  className="text-sm">Customer Support</li>
+                   <li  className="text-sm">Delivery Details</li>
+                   <li  className="text-sm">Terms and Conditions</li>
+                   <li  className="text-sm">Privacy Policy</li>
+                   </ul>
+                {/* box 3*/}
+                <ul className="space-y-3 pb-4">
+                   <h2 className="text-sm sm:text-2xl">FAQ</h2>
+                   <li  className="text-sm">Account</li>
+                   <li  className="text-sm">Manage Deliveries</li>
+                   <li  className="text-sm">Orders</li>
+                   <li  className="text-sm">Payments</li>
+                   </ul>
+                {/* box 4 */}
+                <ul className="space-y-3 pb-4">
+                   <h2 className=" text-sm sm:text-2xl">RESOURCES</h2>
+                   <li className="text-sm">Free eBooks</li>
+                   <li className="text-sm">Development Tutorial</li>
+                   <li className="text-sm">How to - Blog</li>
+                   <li className="text-sm">Youtube Playlist</li>
+                   </ul>
+                {/* complete boxes*/}
 
           </div>
-          <div className=" justify-between w-full h-auto mt-12  left-[-1px]">
-            <div className=" flex justify-between">
-              <div className="">
-                <h1 className=" text-sm ">
-                  <b className="font-black text-5xl">SHOP.CO </b>
-                  <br />
-                  <br />
-                  We have clothes that suits your style and which you&apos;re
-                  proud to wear. From women to men.
-                  <br />
-                  <div className="flex w-full h-auto gap-5 py-5">
-                    <Twitter className="rounded-full border fill-black bg-white" />
-                    <Facebook className="bg-black fill-white rounded-full border " />
-                    <Instagram className="bg-white rounded-full border" />
-                    <Github className="bg-white rounded-full border" />
-                  </div>
-                </h1>
-              </div>
-              </div>
-              <div>
-
-              {/* <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p> */}
-              <div className="flex justify-between">
-                <div className="w-11/12 h-auto flex justify-between">
-                <h3>
-                  <b className="font-normal text-[20px]">COMPANY</b>
-                  <br />
-                  <div className="text-xs pt-6 ">
-                    <p>About</p> <br />
-                    <p>Features </p> <br />
-                    <p>Works </p> <br />
-                    <p> Career </p>
-                  </div>
-                </h3>
-              
-              <div>
-              <div>
-                <h3 className="pr-4">
-                  <b className="font-normal text-[20px]">HELP</b>
-                  <br />
-                  <div className="text-xs pt-6 ">
-                    <p>Customer Support</p> <br />
-                    <p>Delivery Details </p> <br />
-                    <p>Terms & Conditions </p> <br />
-                    <p> Privacy Policy </p>
-                  </div>
-                </h3>
+           
+        </div>
+         {/* bottom div */}
+         <div className="flex flex-col sm:flex-row justify-between items-center mt-3 mx-16">
+                <p className="text-sm">Shop.co © 2000-2023, All Rights Reserved</p>
+                <div className="flex items-center ">
+                    <Image src={"/images/VisaBadge-1.png"} className="w-[50px]" width={100} height={100} alt="pic"/>
+                    <Image src={"/images/MasterBadge-2.png"} className="w-[50px]" width={100} height={100} alt="pic"/>
+                    <Image src={"/images/PayPalBadge-3.png"} className="w-[50px]" width={100} height={100} alt="pic"/>
+                    <Image src={"/images/PayPalBadge-3.png"} className="w-[50px]" width={100} height={100} alt="pic"/>
+                    <Image src={"/images/GooglePayBadge-5.png"} className="w-[50px]" width={100} height={100} alt="pic"/>
                 </div>
-                </div>
-              </div>
-              </div>
-              <div className=" flex justify-between w-full h-auto my-5">
-              <div className="w-11/12 h-auto flex justify-between ">                
-              <h3>
-                  <b className="font-normal text-[20px]">FAQ</b>
-                  <br />
-                  <div className="text-xs pt-6 ">
-                    <p>Account</p> <br />
-                    <p>Manage Deliveries </p> <br />
-                    <p>Orders </p> <br />
-                    <p> Payments </p>
-                  </div>
-                </h3>
-              
-              <div>
-                <h3>
-                  <b className="font-normal text-[20px]">RESOURCES</b>
-                  <br />
-                  <div className="text-xs pt-6 ">
-                    <p>Free eBooks</p> <br />
-                    <p>Developement Tutorial </p> <br />
-                    <p>How to - Blog </p> <br />
-                    <p>Youtube Playlist </p>
-                  </div>
-                </h3>
-              </div>
-              </div>
             </div>
-            </div>
-            <br />
-
-            {/* border line inserted */}
-            <div className="w-full h-auto flex justify-center">
-              <div className="w-full h-auto">
-              <hr className="border border-slate-200"></hr>
-            </div>
-            </div>
-
-
-            <div className="bg-[#efedee]  w-full h-auto pt-5 text-center">
-              
-              <p>Shop.co © 2000-2023, All Rights Reserved</p>
-              {/* VisaPay Badge inserted */}
-              <div className="flex justify-center gap-3 w-[281.07] h-[30.03] mt-5 mb-10 ">
-                <Image
-                  src="/images/VisaBadge-1.png"
-                  alt="visaCard"
-                  width={50.61}
-                  height={30.03}
-                />
-              
-              {/* MasterPay Badge inserted */}
-                <Image
-                  src="/images/MasterBadge-2.png"
-                  alt="MasterCard"
-                  width={50.61}
-                  height={30.03}
-                />
-              {/* PayPal Badge inserted */}
-                <Image
-                  src="/images/PayPalBadge-3.png"
-                  alt="PayPalCard"
-                  width={50.61}
-                  height={30.03}
-                />
-              {/* ApplePay Badge inserted */}
-                <Image
-                  src="/images/ApplePayBadge-4.png"
-                  alt="ApplePayCard"
-                  width={50.61}
-                  height={30.03}
-                />
-              {/* GooglePay Badge inserted */}
-                <Image
-                  src="/images/GooglePayBadge-5.png"
-                  alt="GooglePayCard"
-                  width={50.61}
-                  height={30.03}
-                />
-              </div>
-            </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  );
-};
-
-export default Footer;
+        </main>
+    )
+}

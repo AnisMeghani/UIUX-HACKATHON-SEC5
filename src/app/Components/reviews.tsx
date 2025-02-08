@@ -4,8 +4,8 @@ import { CircleCheck } from "lucide-react";
 
 const Reviews = () => {
   return (
-    <div className="flex sm:justify-center lg:justify-evenly w-full h-auto ">
-      <div className="w-11/12 h-auto border border-gray-300 rounded-2xl px-5 py-5 ">
+    <div className="flex flex-col sm:justify-center lg:flex-row lg:justify-evenly w-full h-auto">
+      <div className="w-11/12 h-auto lg:w-3/12 border border-gray-300 rounded-2xl px-5 py-5 sm:ml-7">
         <div className="flex gap-2">
           <Star className="fill-yellow-500 text-yellow-500 text-sm" />
           <Star className="fill-yellow-500 text-yellow-500" />
@@ -22,11 +22,11 @@ const Reviews = () => {
         <p className="font-normal text-gray-500 pt-2">
           &quot;I&apos;m blown away by the quality and style of the clothes I
           received from Shop.co. From casual wear to elegant dresses, every
-          piece I&aposve bought has exceeded my expectations.&quot;
+          piece I&apos;ve bought has exceeded my expectations.&quot;
         </p>
       </div>
 
-      <div className="sm:hidden w-[400px] h-[240px] border border-gray-300 rounded-2xl px-5 py-5 ">
+      <div className="hidden sm:hidden lg:block lg:w-[400px] lg:h-[240px] border lg:border-gray-300 lg:rounded-2xl lg:px-5 lg:py-5 ">
         <div className="flex gap-2">
           <Star className="fill-yellow-500 text-yellow-500 text-sm" />
           <Star className="fill-yellow-500 text-yellow-500" />
@@ -47,8 +47,8 @@ const Reviews = () => {
           occasions.&quot;
         </p>
       </div>
-      <div className="sm:hidden w-[400px] h-[240px] border border-gray-300 rounded-2xl px-5 py-5 ">
-        <div className="flex gap-2">
+      <div className="hidden sm:hidden lg:block lg:w-[400px] lg:h-[240px] lg:border lg:border-gray-300 lg:rounded-2xl lg:px-5 lg:py-5 ">
+        <div className="lg:flex lg:gap-2">
           <Star className="fill-yellow-500 text-yellow-500 text-sm" />
           <Star className="fill-yellow-500 text-yellow-500" />
           <Star className="fill-yellow-500 text-yellow-500" />

@@ -1,8 +1,18 @@
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import UpperHeader, { Header } from "./Components/header";
+import { Header, UpperHeader } from "./Components/header";
 import Footer from "./Components/footer";
+import { CartProvider } from "./context/CartContext"; // Import the CartProvider
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,14 +27,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // <ClerkProvider>
     <html lang="en">
       <body className={inter.className}>
-        <UpperHeader />
-        <Header />
-        {children}
+        <CartProvider> {/*Wrap the body with CartProvider*/}
+          {/* <UpperHeader /> */}
+          {/* <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn> */}
+           <Header />
+          {children}
+          <ToastContainer /> {/* Add ToastContainer */}
 
-        <Footer />
+          <Footer />
+        </CartProvider>
       </body>
     </html>
+    // </ClerkProvider>
   );
 }
