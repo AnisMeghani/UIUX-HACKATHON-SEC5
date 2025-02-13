@@ -7,8 +7,11 @@ import { Check, Star, StarHalf } from "lucide-react";
 import AddToCartButton from "@/app/Components/AddToCartButton"; // Import client component
 
 interface ProductPageProps {
-  params?: { slug?: string }; // Ensure params are optional
+  params?: {
+    slug?: string | null;
+  };
 }
+
 
 // Fetch product from Sanity
 async function getProduct(slug: string): Promise<Product | null> {
